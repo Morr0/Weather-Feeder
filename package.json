@@ -1,0 +1,11 @@
+{
+  "name": "WeatherFeeder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rami Hadad <rami@ramihikmat.net>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.892.0",
+    "dotenv": "^8.2.0"
+  }
+}
