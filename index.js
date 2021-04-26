@@ -62,4 +62,4 @@ const publishToClient = async (text) => {
     console.log("Published to SNS");
 };
 
-exports.handler = async (event) => await handler(event);
+exports.handler = handler;
