@@ -2,7 +2,7 @@ const {
     WEATHER_API_KEY,
     LATITUDE,
     LONGITUDE,
-    SNS_TOPIC
+    SNS_TOPIC_ARN
 } = process.env;
 
 const handler = async function (event){
@@ -56,11 +56,10 @@ const publishToClient = async (text) => {
 
     console.log("Publishing to SNS");
     await snsClient.publish({
-        TopicArn: SNS_TOPIC,
+        TopicArn: SNS_TOPIC_ARN,
         Message: text
     }).promise();
     console.log("Published to SNS");
 };
 
-exports.handler = handler;
-module.exports = handler;
+exports.handler = async (event) => await handler(event);
