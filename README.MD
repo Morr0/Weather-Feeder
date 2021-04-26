@@ -1,5 +1,8 @@
 # Weather Feeder
 
+Visit the full article this project about:
+https://www.ramihikmat.net/Article/2021/current-weather-feeding-messenger%3A-using-aws-lambda-and-node.js
+
 Here I am using the [Open Weather](https://openweathermap.org/) to run a cron job that sends an SMS message using AWS Lambda, EventBridge and SNS.
 
 **`<SAMPLE>` is a substitute for what it says. This applies below**

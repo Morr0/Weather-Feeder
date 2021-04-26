@@ -1,10 +1,21 @@
 {
     "Version": "2012-10-17",
-    "Statement": {
-        "Effect": "Allow",
-        "Action": [
-            "sns:Publish"
-        ],
-        "Resource": "arn:aws:sns:ap-southeast-2:472971161478:weather-topic"
-    }
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sns:Publish"
+            ],
+            "Resource": "arn:aws:sns:ap-southeast-2:472971161478:weather-topic"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                 "logs:CreateLogStream",
+                 "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
 }
